@@ -1,5 +1,5 @@
 local testFunc = function()
-	return {value = storage.lastNumber}
+	return {value = 5}
 end
 
 return { testFunc = testFunc}
