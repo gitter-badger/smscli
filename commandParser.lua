@@ -38,3 +38,5 @@ findNumber = function(body)
 	end
 	return {body = body}
 end
+
+return {parseCommand = parseCommand}
