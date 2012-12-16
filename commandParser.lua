@@ -6,9 +6,9 @@ parseCommand = function(body)
 		rest = string.sub(body, index+1)
 		
 		if string.upper(command) == "CALL" then
-				return {command = "CALL", number = "+14152839902", body = "calltest"}
+				return {command = "CALL", number = storage.myLocalNumber, body = "calltest"}
 		elseif string.upper(command) == "SMS" then
-				return {command = "SMS", number = "+14152839902", body = "smstest"}
+				return {command = "SMS", number = storage.myLocalNumber, body = "smstest"}
 		elseif command == "." then
 				return {command = "SMS", number = storage.lastOutbound, body = rest}
 		elseif command == "#" then
